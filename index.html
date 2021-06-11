@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+       
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </head>
+    <body>
+        <div class="center">
+            <form name="forms">
+                <input type="text" id="display" name="display" disabled>
+                <div class="buttons">
+                    <input type="button"id="seven"value="7">
+                    <input type="button" id="eight" value="8">
+                    <input type="button" id="nine" value="9">
+                    <input type="button2"  id="add"value="+"><br>
+                    <input type="button" id="four"value="4">
+                    <input type="button" id="five" value="5">
+                    <input type="button" id="six" value="6">
+                    <input type="button2" id="subs" value="-">
+                    <br>
+                    <input type="button" id="one" value="1">
+                    <input type="button" id="two" value="2">
+                    <input type="button"  id="three"value="3">
+                    <input type="button2" id="multi" value="*"><br>
+                    <input type="button"  id="dot"value=".">
+                    <input type="button"  id="zero"value="0">
+                    <input type="button" id="equal" value="=">
+                    <input type="button2"  id="divide"value="/"><br>
+                    <input type="button" id="clear" value="Clear">
+                    <input type="button" id="PrintHistory" value="History">
+                    
+
+                </div>
+            </form>
+            
+        </div>
+       
+        <div class="rightSide">
+            <div id="printhistory">
+                <div>
+                    <h1>History</h1> </div><br>
+                    
+                    <div id="history"></div> 
+            </div>
+        </div>
+        <br>
+        
+        <script src="script.js">
+            
+        </script>
+    <div class="container">
+        <!-- time to add the controls -->
+        <input id="start" name="controls" type="radio" />
+        <input id="stop" name="controls" type="radio" />
+        <input id="reset" name="controls" type="radio" />
+        <div class="timer">
+            <div class="cell">
+                <div class="numbers tenhour moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell">
+                <div class="numbers hour moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell divider"><div class="numbers">:</div></div>
+            <div class="cell">
+                <div class="numbers tenminute movesix">0 1 2 3 4 5 6</div>
+            </div>
+            <div class="cell">
+                <div class="numbers minute moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell divider"><div class="numbers">:</div></div>
+            <div class="cell">
+                <div class="numbers tensecond movesix">0 1 2 3 4 5 6</div>
+            </div>
+            <div class="cell">
+                <div class="numbers second moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell divider"><div class="numbers">:</div></div>
+            <div class="cell">
+                <div class="numbers milisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            
+            <div class="cell">
+                <div class="numbers hundredmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+        </div>
+        <!-- Lables for the controls -->
+        <div id="timer_controls">
+            <label for="start">Start</label>
+            <label for="stop">Stop</label>
+            <label for="reset">Reset</label>
+        </div>
+    </div>
+
+    </body>
+</html>
